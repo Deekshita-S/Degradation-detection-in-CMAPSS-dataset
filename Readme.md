@@ -1,7 +1,7 @@
 # Degradation Onset Detection in FD001 Dataset using Transformer Autoencoders
 
 ## Overview  
-This project aims to detect the onset of degradation in the FD001 dataset using a Transformer Encoder model. The pipeline begins with clustering the CMAPSS sensor data using DBSCAN, which is visualized through t-SNE projection. Since unsupervised models like OCSVM, LSTM Autoencoders, and Transformer Autoencoders are trained exclusively on healthy data, DBSCAN clustering helps estimate the healthy run segments before model training. Once healthy data is identified, various models are trained to learn normal behavior, and degradation onset is detected based on reconstruction error or decision function scores.
+This project aims to detect the onset of degradation in the FD001 dataset using a ML/DL model. The pipeline begins with clustering the CMAPSS sensor data using DBSCAN, which is visualized through t-SNE projection. Since unsupervised models like OCSVM, LSTM Autoencoders, and Transformer Autoencoders are trained exclusively on healthy data, DBSCAN clustering helps estimate the healthy run segments before model training. Once healthy data is identified, various models are trained to learn normal behavior, and degradation onset is detected based on reconstruction error or decision function scores.
 
 ## Dataset  
 The dataset used is `train_FD001.txt` from the CMAPSS (Commercial Modular Aero-Propulsion System Simulation) dataset. The dataset contains sensor readings from aircraft engines, with each engine's data labeled by unit number and time cycle. The dataset includes the following sensor measurements:  
